@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color: brown; */
+}
+.header{
+    display: flex;
+    background-color: black;
+}
+.nav{
+    background-color: rgb(215, 116, 116);
+   height: 3em;
+}
