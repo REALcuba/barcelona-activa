@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     /* background-color: brown; */
-    max-width: 1200px;
+    /* max-width: 1200px; */
 }
 .header{
     display: flex;
@@ -104,10 +104,21 @@ background-color:rgb(76, 74, 78);
 }
 
 .side-article{
+    display: flex;
+    flex-direction: column;
     margin: 20px 20px 20px 10px;
-    height: 100px;
-    width: 27%;
+    height: 104px;
+    width: 30%;
     background-color: red;
+    align-items: center;
+}
+.article-div{
+height: 15px;
+width: 90%;
+background-color: darkorange;
+margin: 10px 10px 0 10px;
+align-items: center;
+justify-content: flex-start;
 }
 .footer-div{
     background-color: rgb(76, 74, 78) ;
