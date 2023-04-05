@@ -109,17 +109,62 @@ background-color:rgb(76, 74, 78);
     margin: 20px 20px 20px 10px;
     height: 104px;
     width: 30%;
-    background-color: red;
+    background-color: rgb(243, 108, 108);
     align-items: center;
 }
 .article-div{
 height: 15px;
 width: 90%;
-background-color: darkorange;
+background-color: rgb(234, 245, 11);
 margin: 10px 10px 0 10px;
 align-items: center;
 justify-content: flex-start;
 }
+footer{
+    background-color: black;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .footer-div{
-    background-color: rgb(76, 74, 78) ;
+    margin: 20px;
+    height: 15px;
+    width: 97%;
+    background-color: rgb(205, 133, 44) ;
+
+}
+/* media queries tablet*/
+@media (max-width:700px){
+    main{
+        display: flex;
+        background-color: yellow;
+        flex-direction: column;
+    }
+    .main-section{
+        margin: 20px 10px 20px 10px;
+        width: 90%;
+    }
+    .side-article{
+        margin: 10px 10px 20px 10px;
+        width: 90%;
+    }
+}
+/* media queries mobile */
+@media (max-width:700px){
+    main{
+        display: flex;
+        background-color: yellow;
+        flex-direction: column;
+    }
+    .main-section{
+        margin: 20px 10px 20px 10px;
+        width: 90%;
+    }
+    .side-article{
+        margin: 10px 10px 20px 10px;
+        width: 90%;
+        justify-content: space-evenly;
+    }
 }
