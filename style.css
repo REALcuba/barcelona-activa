@@ -27,6 +27,18 @@ body{
     }
 .logo {
     height: 50px;
+    animation: mymove 5s linear 1s infinite alternate none;
+    position: relative;
+    }
+
+    @keyframes mymove {
+        0% {
+            left: 0px;
+        }
+
+        100% {
+            left: 30px;
+        }
 }
     ul {
         display: flex;
@@ -182,15 +194,16 @@ footer{
     main{
         display: flex;
         background-color: yellow;
-        flex-direction: column;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
     }
     .main-section{
         margin: 20px 10px 20px 10px;
-        width: 90%;
+        /* width: 90%; */
     }
     .side-article{
         margin: 10px 10px 20px 10px;
-        width: 90%;
+        width: 96%;
     }
     .header-section1 {
         flex-direction: column;
