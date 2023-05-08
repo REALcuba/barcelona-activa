@@ -61,9 +61,10 @@ body{
         text-decoration: none;
     }
     li:hover {
-        border-radius: 3px;
+        border-radius: 4px;
         background-color: blanchedalmond;
         color: coral;
+        font-size: 18px;
     }
 
     .nav-icon {
@@ -107,6 +108,9 @@ height: 15px;
     width: 100%;
     align-items: center;
     justify-content: center;
+}
+.social:hover {
+    height: 1.4em;
 }
 main{
   
