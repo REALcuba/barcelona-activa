@@ -25,11 +25,12 @@ body{
     align-items: center;
     justify-content: space-around;
     }
-.logo {
-    height: 50px;
-    animation: mymove 5s linear 1s infinite alternate none;
-    position: relative;
+    .logo {
+        height: 50px;
+        animation: mymove 5s linear 1s infinite alternate none;
+        position: relative;
     }
+    /* nivel 3, ejercicio 6, add keyframe */
 
     @keyframes mymove {
         0% {
@@ -45,6 +46,7 @@ body{
         justify-content: space-between;
         align-items: center;
         width: 60%;
+        padding: 0;
     }
 
     li {
@@ -52,6 +54,7 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 5px;
     }
 
     a {
@@ -59,6 +62,9 @@ body{
         align-items: center;
         color: rgb(113 86 86 / 86%);
         text-decoration: none;
+    }
+    a:hover {
+        padding: 0 3px;
     }
     li:hover {
         border-radius: 4px;
@@ -74,9 +80,9 @@ body{
     }
 .header-section2{
     display: flex;
-    /* margin: 20px; */
+    text-align: center;
     width: 65%;
-    color: rgb(216 127 31);
+    color: rgba(216, 127, 31, 0.67);
     background-color: #00000029;
     height:111px;
     align-items: center;
@@ -103,7 +109,7 @@ height: 15px;
 }
 .header-nav4{
     font-family: 'Parisienne', cursive;
-    font-size: 1.7rem;
+    font-size: 2rem;
     display: flex;
     width: 100%;
     align-items: center;
@@ -116,6 +122,7 @@ main{
   
     display: flex;
 }  
+/* nivel 3, ejecicio 7, grid layout */
 .main-section{
     margin:20px 6px 20px 0;
     /* width: 65%; */
@@ -168,6 +175,20 @@ margin: 10px 10px 0 10px;
 align-items: center;
 justify-content: flex-start;
 }
+.article-text {
+    display: flex;
+    gap: 2px;
+    padding: 0 4px;
+}
+
+.article-text>p {
+    flex: 1;
+}
+
+
+span:hover {
+    color: #0b0a0af5;
+}
 footer{
 
     margin-top: 15px;
@@ -189,7 +210,7 @@ footer{
     justify-content: center;
     align-content: center;
 }
-/* media queries tablet*/
+/* nivel 1 ejercicio 2, media queries tablet*/
 @media (max-width:700px){
     main{
         display: flex;
@@ -199,7 +220,6 @@ footer{
     }
     .main-section{
         margin: 20px 10px 20px 10px;
-        /* width: 90%; */
     }
     .side-article{
         margin: 10px 10px 20px 10px;
@@ -211,25 +231,35 @@ footer{
     }
     ul {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         width: 94%;
-    }
-    }
+        padding: 0;
+        }
+ul>li:last-child {
+    padding-right: 5px;
+        }
 
-    /* media queries mobile */
+        .header-nav4 {
+            font-size: 1.5rem;
+        }
+
+        .article-text {
+            flex-direction: column;
+        }
+        }
+
+        /* nivel 1 ejercicio 3, media queries mobile */
     @media (max-width:500px) {
 
     .header-nav {
         width: 90%;
     }
 
-    /* main{
+    .main-section {
         display: flex;
-        background-color: yellow;
         flex-direction: column;
     }
-*/
 .header-section1 ul {
     display: none;
 }
